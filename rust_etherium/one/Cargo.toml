@@ -1,0 +1,10 @@
+[package]
+name = "rust_etherium"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = "0.6"
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+

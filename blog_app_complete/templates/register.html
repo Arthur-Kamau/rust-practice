@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+{% if let Some(error_message) = error %}
+<p class="error">{{ error_message }}</p>
+{% endif %}
+
+<form action="/register" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="bio">Bio:</label><br>
+    <input type="text" id="bio" name="bio"><br><br>
+
+    <!--<label style="visibility: collapse" for="avatar_url">Bio:</label><br>-->
+    <!--<input style="visibility: collapse" type="hidden" value="" id="avatar_url" name="avatar_url"><br><br>-->
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Register</button>
+
+</form>
+</body>
+</html>

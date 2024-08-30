@@ -1,0 +1,23 @@
+[package]
+name = "blog_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.2.1", features = ["postgres","chrono"] }
+dotenvy = "0.15"
+chrono = { version = "0.4.38", features = ["serde"] }
+dotenv = "0.15.0"
+actix-web = "4"
+actix-identity="0.7.1"
+actix-session = { version = "0.9.0", features = ["cookie-session"] }
+actix-files = "0.6.6"
+actix-web-lab = "0.20.2"
+async-stream = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+env_logger = "0.11.3"
+log = "0.4.22"
+askama = "0.12.1"
+bcrypt = "0.15.1"
+redis = { version = "0.25", default-features = false, features = ["tokio-comp", "connection-manager"], optional = true }

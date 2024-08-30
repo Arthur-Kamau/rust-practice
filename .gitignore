@@ -1,0 +1,15 @@
+/target
+/.idea
+.env
+
+*/.idea
+*/**/.idea
+*/target
+*/**/target
+
+*/node_modules
+/node_modules
+*/**/node_modules
+*/**/dist
+/dist
+dist
